@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audição Classe Violino</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e4e4e4;
+      color: #333;
+    }
+
+    header {
+      background-color: #f4f4f9;
+      color: #080707;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .program-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem;
+    }
+
+    .piece {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem;
+      width: 80%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .piece:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .details {
+      display: none;
+      margin-top: 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f9;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Audição Classe Violino</h1>
+    <h3>29 de Janeiro 2025</h3>
+    <h5>Prof. Miguel Gil</h5>
+  </header>
+
+  <div class="program-container">
+    <div class="piece" onclick="toggleDetails(this)">
+      <h2>Ana Ferreira - 4º Grau</h2>
+      <div class="details">
+        <p>O.Rieding - Concerto para violino - op. 21</p>
+        <p>1º andamento</p>
+      </div>
+    </div>
+      <div class="piece" onclick="toggleDetails(this)">
+        <h2>Vasco Pereira - 3º Grau</h2>
+        <div class="details">
+          <p>A.Vivaldi - Concerto para violino em lá menor</p>
+          <p>1º andamento</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <footer>
+    <p>&copy; 2025 Concert Program. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleDetails(element) {
+      const details = element.querySelector('.details');
+      if (details.style.display === 'block') {
+        details.style.display = 'none';
+      } else {
+        details.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
