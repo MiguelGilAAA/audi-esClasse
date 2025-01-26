@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,14 @@
       color: #080707;
       text-align: center;
       padding: 1rem;
+      font-size: 1.5rem;
+  
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-right: 1rem;
     }
 
     .program-container {
@@ -25,6 +34,7 @@
       flex-direction: column;
       align-items: center;
       margin: 2rem;
+      padding-bottom: 5rem;
     }
 
     .piece {
@@ -54,15 +64,17 @@
       text-align: center;
       padding: 1rem;
       background: #f4f4f9;
-      color: #fff;
+      color: #070606;
       position: fixed;
       bottom: 0;
       width: 100%;
     }
   </style>
 </head>
+
 <body>
   <header>
+    <img src="logo.png" alt="Logo" class="logo">
     <h1>Audição Classe Violino</h1>
     <h3>29 de Janeiro 2025</h3>
     <h5>Prof. Miguel Gil</h5>
@@ -76,18 +88,60 @@
         <p>1º andamento</p>
       </div>
     </div>
-      <div class="piece" onclick="toggleDetails(this)">
-        <h2>Vasco Pereira - 3º Grau</h2>
-        <div class="details">
-          <p>A.Vivaldi - Concerto para violino em lá menor</p>
-          <p>1º andamento</p>
-        </div>
+
+    <div class="piece" onclick="toggleDetails(this)">
+      <h2>Vasco Pereira - 3º Grau</h2>
+      <div class="details">
+        <p>A.Vivaldi - Concerto para violino em lá menor</p>
+        <p>1º andamento</p>
       </div>
     </div>
+
+
+    <div class="piece" onclick="toggleDetails(this)">
+      <h2>André Salgado - 4º Grau</h2>
+      <div class="details">
+        <p> Komarowski - Concerto para violino em lá Maior</p>
+        <p>2º andamento</p>
+      </div>
     </div>
 
+
+    <div class="piece" onclick="toggleDetails(this)">
+      <h2>Guilherme Pinto - 3º Grau</h2>
+      <div class="details">
+        <p> F. Kuchler - Concerto para violino em Ré Maior
+          - op. 12
+        </p>
+        <p>1º andamento</p>
+      </div>
+    </div>
+
+
+    <div class="piece" onclick="toggleDetails(this)">
+      <h2>Gonçalo Fernandes - 3º Grau</h2>
+      <div class="details">
+        <p>O.Rieding - Concerto para violino - op. 21</p>
+        <p>1º andamento</p>
+      </div>
+    </div>
+
+    <div class="piece" onclick="toggleDetails(this)">
+      <h2>Mariana Valente - 4º Grau</h2>
+      <div class="details">
+        <p>O.Rieding - Concerto para violino - op. 24</p>
+        <p>3º andamento</p>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
   <footer>
-    <p>&copy; 2025 Concert Program. All rights reserved.</p>
+    <p>Escola Artística do Conservatório de Música de Aveiro</p>
+    <img src="logo.png" alt="Logo" class="logo" style="width: 60px;">
+    <img src="min.png" alt="Logo" class="logo" style="width: 100px;">
   </footer>
 
   <script>
@@ -101,4 +155,5 @@
     }
   </script>
 </body>
+
 </html>
