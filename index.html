@@ -60,12 +60,13 @@
       color: #555;
     }
 
-    .details p:last-child {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      font-size: 0.8rem;
-      color: #666;
+    @media (max-width: 600px) {
+      .details p:last-child {
+        position: static;
+        margin-top: 1rem;
+        text-align: right;
+        font-size: smaller;
+      }
     }
 
 
